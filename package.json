@@ -1,9 +1,10 @@
 {
-  "name": "express-mongodb-starter",
+  "name": "watch-vault-backend",
   "version": "1.0.0",
-  "description": "This is a Starter template for Expressjs with MongoDB",
+  "description": "",
   "main": "index.js",
   "keywords": [
+    "movie",
     "javascript",
     "nodejs",
     "expressjs",
@@ -11,11 +12,10 @@
     "mongoose"
   ],
   "author": "Md. Minar Munshi",
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-    "db:seed": "node src/db/seeder.js"
+    "dev": "nodemon src/index.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",

@@ -33,9 +33,11 @@ app.get('/health', (_req, res) => {
 
 // routes import
 const userRouter = require('../routes/user.routes');
+const movieRouter = require('../routes/movie.routes');
 
 // routes declaration
 app.use('/api/v1/users', userRouter);
+app.use('/api/v1/movies', movieRouter);
 
 // Not Found Handler
 app.use((_req, res) => {
