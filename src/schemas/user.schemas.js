@@ -1,12 +1,9 @@
 const { z } = require('zod');
 
 const registerUserSchema = z.object({
-  firstName: z
-    .string({ message: 'firstName is required' })
-    .min(1, 'First name must be at least 1 character'),
-  lastName: z
-    .string({ message: 'lastName is required' })
-    .min(1, 'Last name must be at least 1 character'),
+  name: z
+    .string({ message: 'name is required' })
+    .min(1, 'Name must be at least 1 character'),
   email: z
     .string({ message: 'email is required' })
     .email({ message: 'Invalid Email' })
