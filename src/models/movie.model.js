@@ -14,15 +14,12 @@ const movieSchema = new Schema(
     language: {
       type: String,
       required: true,
+      uppercase: true,
     },
     poster: {
       type: String,
       required: true,
       default: 'https://placehold.co/200x300',
-    },
-    country: {
-      type: String,
-      required: true,
     },
     isWatched: {
       type: Boolean,

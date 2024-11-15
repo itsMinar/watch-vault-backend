@@ -21,7 +21,7 @@ const getWatchedMovies = asyncHandler(async (req, res) => {
     filter.releaseYear = releaseYear;
   }
   if (language) {
-    filter.language = language;
+    filter.language = language.toUpperCase();
   }
 
   // Calculate the skip value for pagination

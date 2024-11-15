@@ -14,9 +14,6 @@ const addMovieSchema = z.object({
     .string({ message: 'poster is required' })
     .url({ message: 'poster must be a valid url' })
     .optional(),
-  country: z
-    .string({ message: 'country is required' })
-    .min(1, { message: 'Country must be at least 1 character' }),
   isWatched: z
     .boolean({ message: 'isWatched must be a Boolean value' })
     .default(true),
